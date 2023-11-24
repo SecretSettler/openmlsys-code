@@ -5,6 +5,6 @@ torch::Tensor custom_add(torch::Tensor a, torch::Tensor b) {
     return a + b;
 }
 
-PYBIND11_MODULE("custom_extensions", m) {
+PYBIND11_MODULE("custom_extension", m) {
     m.def("custom_add", &custom_add, "A custom add function");
 }
